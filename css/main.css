@@ -21,10 +21,12 @@ img{
 
 #nightimg{
 	display:none;
+	color: aqua;
 }
 
 #dayimg{
 	display:block;
+	color: orange
 }
 
 * {
@@ -37,7 +39,7 @@ img{
 
 
 body.night {	
-	background-color:#212121;
+	background-color:#0c0c0c;
 	color: #C8C8C9;
 	font-family: NeueHaas;
 	font-size: 1.6rem;
