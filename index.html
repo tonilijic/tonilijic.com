@@ -23,8 +23,6 @@
     }
   </script>
 
-
-
   <!-- Basic Page Needs -->
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
   <meta name="apple-touch-fullscreen" content="yes">
@@ -32,14 +30,12 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
   <title>Toni L. · Designer</title>
   <meta property="og:url" content="https://tonilijic.com">
-  <meta property="og: type" content="website"> 
+  <meta property="og:type" content="website"> 
   <meta name="description" content="Designer working at the intersection of art, design, and code.">
-  <meta property="og: site_name" content="Toni L. · Designer">
+  <meta property="og:site_name" content="Toni L. · Designer">
   <meta property="og:title" content="Toni L. · Designer">
-  <meta property="og: image" content="https://tonilijic.com/images/previewimg.jpg">
+  <meta property="og:image" content="https://tonilijic.com/images/previewimg.jpg">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
-
 
   <!-- CSS -->
   <link rel="stylesheet" href="css/normalize.css">
@@ -49,13 +45,11 @@
   <!--mastodon-->
   <link rel="me" href="https://mastodon.design/@tl">
 
-
   <!-- Favicon -->
   <link rel="icon" type="images/png" sizes="32x32" href="images/favicon_32x32.png">
   <link rel="icon" type="images/png" sizes="96x96" href="images/favicon_96x96.png">
   <link rel="icon" type="images/png" sizes="16x16" href="images/favicon_16x16.png">
   
-
   <!-- twitter preview -->
   <meta name="twitter:title" content="Toni L. · Designer">
   <meta name="twitter:card" content="summary_large_image" />
@@ -63,36 +57,25 @@
   <meta name="twitter:description"content="Designer working at the intersection of art, design, and code." />
   <meta name="twitter:image" content="https://tonilijic.com/images/previewimg.jpg">
 
-
 </head>
-
-
-
 
 <!-- Content -->
 
 <body class="day">
   <div class="container">
-  
     <div class="animated fadeIn one">
-  
       <div class="toggle" onclick="toggleMode()">
         <img id="nightimg" src="images/moon.svg">
         <img id="dayimg" src="images/sun.svg">
       </div> 
     
-    
       <h1><div id="greet">hi,</div> i'm toni.</h1>
-
     </div>
-
 
     <div class="animated fadeIn two">
-          <p>I'm a full spectrum designer that loves the intersection of art and code. Originally from Croatia, now living in Switzerland. <p>When I’m not heads down at work, you’ll catch me gushing over my latest app discovery, cycling in the alps, or consuming obnoxious amounts of oranges.</p>
-        <p>Keep up with me on <a href="https://twitter.com/tonilijic" target="_blank" class="underline">Twitter</a> or better yet,<br> shoot me an <a href="mailto:hello.tonilijic@gmail.com/" target="_blank" class="underline">email</a>.</p>
-
+      <p>I'm a full spectrum designer that loves the intersection of art and code. Originally from Croatia, now living in Switzerland. <p>When I’m not heads down at work, you’ll catch me gushing over my latest app discovery, cycling in the alps, or consuming obnoxious amounts of oranges.</p>
+      <p>Keep up with me on <a href="https://twitter.com/tonilijic" target="_blank" class="underline">Twitter</a> or better yet,<br> shoot me an <a href="mailto:hello.tonilijic@gmail.com/" target="_blank" class="underline">email</a>.</p>
     </div>
-
 
     <div class="animated fadeIn three">
       <div class="p3">
@@ -100,52 +83,65 @@
         <p><a href="https://bento.me/tonil" target="_blank" class="underline">bento.me</a></p>
       </div>
     </div> 
-
-
   </div>
 
-
-
   <script>
-  
     let greetEl = document.getElementById("greet"); 
-      let i = 0;
-      setTimeout(() => {
-          setInterval(() => {
-              greetEl.style.animation = "none";
-              greetEl.innerHTML = greet[i % 3];
-              i++;  
-          }, 3000);
-      }, 1000);
-    
-    
-      const toggleMode = () => {
-        let element = document.body;
-        if (element.classList.contains("night")) {
-          element.classList.add("day")
-          element.classList.remove("night")
-          document.getElementById("dayimg").style.display = "block";
-          document.getElementById("nightimg").style.display = "none";
-          
-        } else {
-          element.classList.add("night")
-          element.classList.remove("day")
-          document.getElementById("nightimg").style.display = "block";
-          document.getElementById("dayimg").style.display = "none";
-        }
-      }
+    let i = 0;
+    setTimeout(() => {
+      setInterval(() => {
+        greetEl.style.animation = "none";
+        greetEl.innerHTML = greet[i % 3];
+        i++;  
+      }, 3000);
+    }, 1000);
 
-    let greet = [
-      "hi,",
-      "bok,",
-      "gr\xfcezi,"
-      
-  ]; 
+    const toggleMode = () => {
+      let element = document.body;
+      if (element.classList.contains("night")) {
+        element.classList.add("day")
+        element.classList.remove("night")
+        document.getElementById("dayimg").style.display = "block";
+        document.getElementById("nightimg").style.display = "none";
+      } else {
+        element.classList.add("night")
+        element.classList.remove("day")
+        document.getElementById("nightimg").style.display = "block";
+        document.getElementById("dayimg").style.display = "none";
+      }
+    }
+
+    let greet = ["hi,", "bok,", "grüezi,"]; 
+
+    // Check for system preference and apply it
+    function applyTheme(theme) {
+      if (theme === 'dark') {
+        document.body.classList.add('night');
+        document.body.classList.remove('day');
+        document.getElementById("nightimg").style.display = "block";
+        document.getElementById("dayimg").style.display = "none";
+      } else {
+        document.body.classList.add('day');
+        document.body.classList.remove('night');
+        document.getElementById("dayimg").style.display = "block";
+        document.getElementById("nightimg").style.display = "none";
+      }
+    }
+
+    // Initial theme check
+    if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+      applyTheme('dark');
+    } else {
+      applyTheme('light');
+    }
+
+    // Listen for changes in system preference
+    window.matchMedia('(prefers-color-scheme: dark)').addListener(e => {
+      applyTheme(e.matches ? 'dark' : 'light');
+    });
   </script>
 
   <script src="js/script.js"></script>
-
-  
 </body>
 </html>
 
