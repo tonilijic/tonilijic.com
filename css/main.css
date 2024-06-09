@@ -21,18 +21,16 @@ img{
 
 #nightimg{
 	display:none;
-	color: aqua;
 }
 
 #dayimg{
 	display:block;
-	color: orange
 }
 
 * {
 	-webkit-font-smoothing: antialiased;
 	margin:0;
-    padding: 0;
+    	padding: 0;
 }
 
 
@@ -47,7 +45,7 @@ body.night {
 	display:grid;
 	grid-template-columns: repeat(12, minmax(0, 1fr));
 	grid-gap: 2.4rem;
-	height: 70vh;
+	height: 72vh;
 	place-items: center;
 }
 
@@ -60,7 +58,7 @@ body.day {
 	display:grid;
 	grid-template-columns: repeat(12, minmax(0, 1fr));
 	grid-gap: 2.4rem;
-	height: 70vh;
+	height: 72vh;
 	place-items: center;
 }
 
@@ -72,11 +70,11 @@ body.day {
 
 
 .p3{
-	padding-top:4rem;
+	padding-top:4.8rem;
 }
 
 #greet {
-    margin-bottom: 1.2rem;
+    margin-bottom: 1.8rem;
     font-size: 3.4rem; line-height: 3.4rem;
  
    
@@ -95,7 +93,7 @@ body.day h1 {
 	font-family: NeueHaasMedium;
 	font-family: NeueHaasMedium;
 	font-size: 3.4rem; line-height: 3.4rem;
-	padding-bottom: 1.2rem;
+	padding-bottom: 1.4rem;
 }
 
 
@@ -135,7 +133,7 @@ body.day a {
 }
 
 .toggle{
-	margin-bottom: 6.4rem;
+	margin-bottom: 7.2rem;
 }
 
 
