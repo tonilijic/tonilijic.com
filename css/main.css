@@ -47,7 +47,7 @@ body.night {
 	display:grid;
 	grid-template-columns: repeat(12, minmax(0, 1fr));
 	grid-gap: 2.4rem;
-	height: 80vh;
+	height: 70vh;
 	place-items: center;
 }
 
@@ -60,7 +60,7 @@ body.day {
 	display:grid;
 	grid-template-columns: repeat(12, minmax(0, 1fr));
 	grid-gap: 2.4rem;
-	height: 80vh;
+	height: 70vh;
 	place-items: center;
 }
 
