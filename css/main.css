@@ -20,11 +20,11 @@ img{
 }
 
 #nightimg{
-	display:none;
+	display:block;
 }
 
 #dayimg{
-	display:block;
+	display:none;
 }
 
 * {
