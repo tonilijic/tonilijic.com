@@ -102,8 +102,11 @@
         greetEl.style.animation = "none";
         greetEl.innerHTML = greet[i % 3];
         i++;  
-      }, 2000);
+      }, 3000);
     }, 1000);
+
+    let greet = ["hi,", "bok,", "grüezi,"]; 
+
 
     const toggleMode = () => {
       let element = document.body;
@@ -119,8 +122,6 @@
         document.getElementById("dayimg").style.display = "none";
       }
     }
-
-    let greet = ["hi,", "bok,", "grüezi,"]; 
 
     // Check for system preference and apply it
     function applyTheme(theme) {

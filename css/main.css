@@ -15,7 +15,7 @@ html {
 
 
 img{
-	height: 1.8rem;
+	height: 1.6rem;
 	width: auto;
 }
 
@@ -51,7 +51,7 @@ body.night {
 
 body.day {
 	background-color: #F6F6F7;
-	color: #403E43;
+	color: #202020;
 	font-family: NeueHaas;
 	font-size: 1.6rem;
 	line-height: 2.6rem;
@@ -74,8 +74,8 @@ body.day {
 }
 
 #greet {
-    margin-bottom: 1.8rem;
-    font-size: 3.4rem; line-height: 3.4rem;
+    margin-bottom: 0.8rem;
+    font-size: 3.4rem; 
  
    
  
@@ -89,7 +89,7 @@ body.night h1 {
 }
 
 body.day h1 {
-	color: #403E43;
+	color: #202020;
 	font-family: NeueHaasMedium;
 	font-family: NeueHaasMedium;
 	font-size: 3.4rem; line-height: 3.4rem;
@@ -127,7 +127,7 @@ body.night a {
 }
 
 body.day a {
-	color: #403E43;
+	color: #202020;
 	font-family: NeueHaasMedium;
 	text-decoration: none;
 }
