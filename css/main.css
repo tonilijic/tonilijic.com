@@ -64,7 +64,6 @@ body.day {
 
 
 .container{
-	margin-top: 4.8rem;
 	grid-column: 2 / 10;
 	max-width: 355px;
 }
@@ -134,6 +133,7 @@ body.day a {
 }
 
 .toggle{
+	padding-top: 4.8rem;
 	margin-bottom: 7.2rem;
 }
 
