@@ -87,12 +87,12 @@ Licensed under the MIT license - http://opensource.org/licenses/MIT
 }
 
 @-webkit-keyframes flash {
-  0%, 50%, 100% {
+  0%, 100% {
     opacity: 1;
   }
 
-  25%, 75% {
-    opacity: 0;
+  50% {
+    opacity: 0.6;
   }
 }
 
@@ -102,14 +102,18 @@ Licensed under the MIT license - http://opensource.org/licenses/MIT
   }
 
   25%, 75% {
-    opacity: 0;
+    opacity: 0.5;
   }
 }
 
 .flash {
   -webkit-animation-name: flash;
           animation-name: flash;
+  transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+  animation-duration:  1.8s;
 }
+
+
 
 /* originally authored by Nick Pettit - https://github.com/nickpettit/glide */
 
@@ -1111,6 +1115,10 @@ Licensed under the MIT license - http://opensource.org/licenses/MIT
   }
 }
 
+.fadeIn {
+  animation-duration: 2s;
+}
+
 .fadeInDown {
   -webkit-animation-name: fadeInDown;
   -moz-animation-name: fadeInDown;
@@ -1301,27 +1309,37 @@ Licensed under the MIT license - http://opensource.org/licenses/MIT
 
 /* Add delayed effect to landing page */
 .fadeInUp.one {
-  -webkit-animation-delay: 0.1s;
-  -moz-animation-delay: 0.1s;
-  animation-delay: 0.1s;
+  -webkit-animation-delay: 0s;
+  -moz-animation-delay: 0s;
+  animation-delay: 0s;
+
+ 
 }
  
 .fadeInUp.two {
-  -webkit-animation-delay: 0.3s;
-  -moz-animation-delay:0.3s;
-  animation-delay: 0.3s;
+  -webkit-animation-delay: 0.2s;
+  -moz-animation-delay:0.2s;
+  animation-delay: 0.2s;
+
+ 
+ 
 }
  
 .fadeInUp.three {
-  -webkit-animation-delay: 0.5s;
-  -moz-animation-delay: 0.5s;
-  animation-delay: 0.5s;
+  -webkit-animation-delay: 0.4s;
+  -moz-animation-delay: 0.4s;
+  animation-delay: 0.4s;
+
+  
+
 }
 
 .fadeInUp.four {
-  -webkit-animation-delay: 0.7s;
-  -moz-animation-delay: 0.7s;
-  animation-delay: 0.7s;
+  -webkit-animation-delay: 0.6s;
+  -moz-animation-delay: 0.6s;
+  animation-delay: 0.6s;
+
+  
 }
 
 
@@ -1329,6 +1347,9 @@ Licensed under the MIT license - http://opensource.org/licenses/MIT
   -webkit-animation-delay: 0.8s;
   -moz-animation-delay: 0.8s;
   animation-delay: 0.8s;
+
+
+  
 }
 
 
@@ -1339,7 +1360,7 @@ Licensed under the MIT license - http://opensource.org/licenses/MIT
   
   0% {
     opacity: 0;
-    -webkit-transform: translateY(10px);
+    -webkit-transform: translateY(16px);
   }
 
   100% {
@@ -1351,7 +1372,7 @@ Licensed under the MIT license - http://opensource.org/licenses/MIT
 @-moz-keyframes fadeInUp {
   0% {
     opacity: 0;
-    -moz-transform: translateY(10px);
+    -moz-transform: translateY(16px);
   }
 
   100% {
@@ -1363,7 +1384,7 @@ Licensed under the MIT license - http://opensource.org/licenses/MIT
 @-o-keyframes fadeInUp {
   0% {
     opacity: 0;
-    -o-transform: translateY(10px);
+    -o-transform: translateY(16px);
   }
 
   100% {
@@ -1375,7 +1396,7 @@ Licensed under the MIT license - http://opensource.org/licenses/MIT
 @keyframes fadeInUp {
   0% {
     opacity: 0;
-    transform: translateY(10px);
+    transform: translateY(16px);
   }
 
   100% {
@@ -1389,7 +1410,12 @@ Licensed under the MIT license - http://opensource.org/licenses/MIT
   -moz-animation-name: fadeInUp;
   -o-animation-name: fadeInUp;
   animation-name: fadeInUp;
+  transition: ease-in-out;
+  animation-duration: 0.8s;
+ 
 }
+
+
 
 @-webkit-keyframes fadeInUpBig {
   0% {
