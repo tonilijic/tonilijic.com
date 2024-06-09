@@ -110,13 +110,13 @@
       if (element.classList.contains("night")) {
         element.classList.add("day")
         element.classList.remove("night")
-        document.getElementById("dayimg").style.display = "block";
-        document.getElementById("nightimg").style.display = "none";
+        document.getElementById("dayimg").style.display = "none";
+        document.getElementById("nightimg").style.display = "block";
       } else {
         element.classList.add("night")
         element.classList.remove("day")
-        document.getElementById("nightimg").style.display = "block";
-        document.getElementById("dayimg").style.display = "none";
+        document.getElementById("nightimg").style.display = "none";
+        document.getElementById("dayimg").style.display = "block";
       }
     }
 
@@ -127,13 +127,13 @@
       if (theme === 'dark') {
         document.body.classList.add('night');
         document.body.classList.remove('day');
-        document.getElementById("nightimg").style.display = "block";
-        document.getElementById("dayimg").style.display = "none";
+        document.getElementById("nightimg").style.display = "none";
+        document.getElementById("dayimg").style.display = "block";
       } else {
         document.body.classList.add('day');
         document.body.classList.remove('night');
-        document.getElementById("dayimg").style.display = "block";
-        document.getElementById("nightimg").style.display = "none";
+        document.getElementById("dayimg").style.display = "none";
+        document.getElementById("nightimg").style.display = "block";
       }
     }
 
