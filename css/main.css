@@ -105,10 +105,9 @@ body {
 
 
 .sun-and-moon {
-	position: absolute;
-	display:inline-block;
-	width: 2rem;
-	height: 2rem;
+/* 	position: absolute; */
+	width: 1.6rem;
+	height: 1.6rem;
 	border-radius: 1rem;
 	background: var(--color-h1);
 	transform-origin: center center;
