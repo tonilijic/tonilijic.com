@@ -269,3 +269,8 @@ body a {
 
 }
 
+@media (hover: none) {
+	.underline-rdio:hover + #rdio-psa {
+		opacity: 1;
+	}
+}
