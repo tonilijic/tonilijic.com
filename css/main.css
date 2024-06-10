@@ -97,7 +97,6 @@ body {
 
 
 .sun-and-moon {
-	display: inline-block;
 	position: absolute;
 	width: 1.6rem;
 	height: 1.6rem;
@@ -115,6 +114,7 @@ body {
 
 .sun-and-moon::after {
 	position: absolute;
+	content: '';
 	width: 1.3rem;
 	height: 1.3rem;
 	left: var(--offset-left);
