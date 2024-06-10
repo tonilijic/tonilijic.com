@@ -31,7 +31,7 @@
 
 	--offset-left:0.7rem;
 	--offset-bottom: 0.4rem;
-	--scale: 1
+	
 }
 
 :root.night {
@@ -43,7 +43,7 @@
 
 	--offset-left:1.6rem;
 	--offset-bottom: 0.8rem;
-	--scale: 0
+	
 }
 
 
