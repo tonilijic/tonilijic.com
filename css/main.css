@@ -14,10 +14,6 @@
 	-webkit-font-smoothing: antialiased;
 	margin:0;
     padding: 0;
-	user-select: none;
-	-webkit-user-select: none; /* For Safari */
-	-moz-user-select: none; /* For Firefox */
-	-ms-user-select: none; /* For IE/Edge */
 
 }
 
@@ -91,6 +87,10 @@ body {
 	padding-top: 2.4rem;
 	margin-bottom: 4.8rem;
 	color: var(--color-h1);
+	user-select: none;
+	-webkit-user-select: none; /* For Safari */
+	-moz-user-select: none; /* For Firefox */
+	-ms-user-select: none; /* For IE/Edge */
 	
 }
 
@@ -105,6 +105,10 @@ body {
 	background: var(--color-h1);
 	transform-origin: center center;
 	transition: transform 0.3s ease, var(--page-color-transition);
+	user-select: none;
+	-webkit-user-select: none; /* For Safari */
+	-moz-user-select: none; /* For Firefox */
+	-ms-user-select: none; /* For IE/Edge */
 	
 
 }
@@ -120,6 +124,10 @@ body {
 	background: var(--color-bg);
 	transform-origin: center center;
 	transition: transform 0.3s ease, left 0.3s ease, bottom 0.1s ease, var(--page-color-transition);
+	user-select: none;
+	-webkit-user-select: none; /* For Safari */
+	-moz-user-select: none; /* For Firefox */
+	-ms-user-select: none; /* For IE/Edge */
 	
 	
 }
