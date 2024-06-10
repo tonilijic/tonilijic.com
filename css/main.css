@@ -117,6 +117,12 @@ body {
 	-moz-user-select: none; /* For Firefox */
 	-ms-user-select: none; /* For IE/Edge */
 	
+	overflow: hidden ;
+	-webkit-overflow: hidden; /* For Safari */
+	-moz-overflow: hidden; /* For Firefox */
+	-ms-overflow: hidden; /* For IE/Edge */
+	
+
 
 }
 
@@ -135,6 +141,12 @@ body {
 	-webkit-user-select: none; /* For Safari */
 	-moz-user-select: none; /* For Firefox */
 	-ms-user-select: none; /* For IE/Edge */
+
+	overflow: hidden ;
+	-webkit-overflow: hidden; /* For Safari */
+	-moz-overflow: hidden; /* For Firefox */
+	-ms-overflow: hidden; /* For IE/Edge */
+
 	
 	
 }
