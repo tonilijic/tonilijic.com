@@ -52,10 +52,7 @@ html {
 	font-size: 62.5%; }
 
 
-img{
-	height: 1.6rem;
-	width: auto;
-}
+
 
 
 
@@ -70,7 +67,7 @@ body {
 	display:grid;
 	grid-template-columns: repeat(12, minmax(0, 1fr));
 	grid-gap: 2.4rem;
-	height: 72vh;
+	height: 80vh;
 	place-items: center;
 }
 
@@ -79,6 +76,10 @@ body {
 .container{
 	grid-column: 2 / 10;
 	max-width: 355px;
+	user-select: none;
+	-webkit-user-select: none; /* For Safari */
+	-moz-user-select: none; /* For Firefox */
+	-ms-user-select: none; /* For IE/Edge */
 }
 
 
@@ -277,6 +278,10 @@ body a {
 
 	.underline:after{
 		right:0;
+	}
+
+	body {
+		height: 72vh;
 	}
 
 }
