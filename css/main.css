@@ -83,6 +83,7 @@ body {
 .toggle{
 	padding-top: 2.4rem;
 	margin-bottom: 7.2rem;
+	display: inline-block;
 }
 
 
