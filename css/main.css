@@ -124,8 +124,7 @@ body {
 }
 
 .sun-and-moon::after {
-	position: relative;
-	
+	position: absolute;
 	content: '';
 	width: 1.3rem;
 	height: 1.3rem;
