@@ -62,7 +62,7 @@ img{
 
 body {	
 	background-color:var(--color-bg);
-/* 	transition: transform 0.5s ease-in-out, var(--page-color-transition); */
+	transition: transform 0.5s ease-in-out, var(--page-color-transition);
 	color: var(--color-text);
 	font-family: NeueHaas;
 	font-size: 1.6rem;
