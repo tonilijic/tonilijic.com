@@ -125,15 +125,15 @@ body {
 
 .sun-and-moon::after {
 	position: relative;
-	display:inline-block;
+	
 	content: '';
 	width: 1.3rem;
 	height: 1.3rem;
 	left: var(--offset-left);
 	bottom: var(--offset-bottom);
 	border-radius: 1rem;
-	background: orange;
-/* 	background: var(--color-bg); */
+
+	background: var(--color-bg);
 
 	transform-origin: center center;
 	transition: transform 0.3s ease, left 0.3s ease, bottom 0.1s ease, var(--page-color-transition);
