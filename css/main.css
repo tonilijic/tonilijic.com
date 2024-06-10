@@ -14,9 +14,17 @@
 	-webkit-font-smoothing: antialiased;
 	margin:0;
     padding: 0;
+	user-select: none;
+	-webkit-user-select: none; /* For Safari */
+	-moz-user-select: none; /* For Firefox */
+	-ms-user-select: none; /* For IE/Edge */
+
 }
 
 
+:root {
+	--page-color-transition: background .2s ease, color .2s ease;
+}
 
 /* theme variables */
 :root.day {
@@ -24,6 +32,10 @@
 	--color-text:#202020;
 	--color-h1: #202020;
     --color-h4: #9F9EA1;
+
+	--offset-left:0.7rem;
+	--offset-bottom: 0.4rem;
+	--scale: 1
 }
 
 :root.night {
@@ -31,6 +43,11 @@
 	--color-text: #C8C8C9;
     --color-h1: #fff;
     --color-h4: #8A898C;
+
+
+	--offset-left:1.6rem;
+	--offset-bottom: 0.8rem;
+	--scale: 0
 }
 
 
@@ -46,21 +63,10 @@ img{
 
 
 
-/* init icons */
-
-#nightimg{
-	display:none;
-}
-
-#dayimg{
-	display:block;
-}
-
-
-
 
 body {	
 	background-color:var(--color-bg);
+	transition: transform 0.5s ease-in-out, var(--page-color-transition);
 	color: var(--color-text);
 	font-family: NeueHaas;
 	font-size: 1.6rem;
@@ -81,14 +87,49 @@ body {
 
 
 .toggle{
+	display: inline-block;
 	padding-top: 2.4rem;
-	margin-bottom: 7.2rem;
+	margin-bottom: 4.8rem;
+	color: var(--color-h1);
+	
 }
+
+
+
+.sun-and-moon {
+	display: flex;
+	position: absolute;
+	width: 1.6rem;
+	height: 1.6rem;
+	border-radius: 1rem;
+	background: var(--color-h1);
+	transform-origin: center center;
+	transition: transform 0.3s ease, var(--page-color-transition);
+	
+
+}
+
+.sun-and-moon::after {
+	position: absolute;
+	content: '';
+	width: 1.3rem;
+	height: 1.3rem;
+	left: var(--offset-left);
+	bottom: var(--offset-bottom);
+	border-radius: 1rem;
+	background: var(--color-bg);
+	transform-origin: center center;
+	transition: transform 0.3s ease, left 0.3s ease, bottom 0.1s ease, var(--page-color-transition);
+	
+	
+}
+
 
 
 #greet {
     margin-bottom: 0.8rem;
     font-size: 3.4rem; 
+
 }
 
 
@@ -220,7 +261,4 @@ body a {
 	}
 
 }
-
-
-
 
