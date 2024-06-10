@@ -118,6 +118,10 @@ Licensed under the MIT license - http://opensource.org/licenses/MIT
   transition: cubic-bezier(0.075, 0.82, 0.165, 1);
   animation-duration:  0.9s;
   animation-iteration-count: 2;
+  user-select: none;
+	-webkit-user-select: none; /* For Safari */
+	-moz-user-select: none; /* For Firefox */
+	-ms-user-select: none; /* For IE/Edge */
 }
 
 
