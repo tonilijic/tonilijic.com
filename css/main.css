@@ -132,7 +132,9 @@ body {
 	left: var(--offset-left);
 	bottom: var(--offset-bottom);
 	border-radius: 1rem;
-	background: var(--color-bg);
+	background: orange;
+/* 	background: var(--color-bg); */
+
 	transform-origin: center center;
 	transition: transform 0.3s ease, left 0.3s ease, bottom 0.1s ease, var(--page-color-transition);
 	user-select: none;
