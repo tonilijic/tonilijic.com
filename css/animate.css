@@ -98,16 +98,16 @@ Licensed under the MIT license - http://opensource.org/licenses/MIT
   }
 
   50% {
-    opacity: 0.6;
+    opacity: 0.5;
   }
 }
 
 @keyframes flash {
-  0%, 50%, 100% {
+  0%, 100% {
     opacity: 1;
   }
 
-  25%, 75% {
+  50% {
     opacity: 0.5;
   }
 }
@@ -116,7 +116,8 @@ Licensed under the MIT license - http://opensource.org/licenses/MIT
   -webkit-animation-name: flash;
           animation-name: flash;
   transition: cubic-bezier(0.075, 0.82, 0.165, 1);
-  animation-duration:  1.8s;
+  animation-duration:  0.9s;
+  animation-iteration-count: 2;
 }
 
 
@@ -312,6 +313,8 @@ Licensed under the MIT license - http://opensource.org/licenses/MIT
   -webkit-animation-name: swing;
           animation-name: swing;
 }
+
+
 
 
 /* TADA */
@@ -1308,9 +1311,8 @@ Licensed under the MIT license - http://opensource.org/licenses/MIT
 
 .fadeInRightBig {
   -webkit-animation-name: fadeInRightBig;
-          animation-name: fadeInRightBig;
+  animation-name: fadeInRightBig;
 }
-
 
 
 

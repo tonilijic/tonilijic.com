@@ -57,6 +57,8 @@
   <meta name="twitter:description"content="Designer working at the intersection of art, design, and code." />
   <meta name="twitter:image" content="https://tonilijic.com/images/previewimg.jpg">
 
+
+  
   
 
 </head>
@@ -70,18 +72,17 @@
    <div class="animated flash">
   
       <div class="toggle" onclick="toggleMode()">
-        <img id="dayimg" src="images/moon.svg">
-        <img id="nightimg" src="images/sun.svg">
+        <div class = "sun-and-moon"></div>
       </div> 
 
     </div>
-    
+
 
     <h1 class="animated fadeInUp one"><div id="greet">hi,</div> i'm toni.</h1>
 
 <!-- paragraphs -->
     <p class="animated fadeInUp two">I'm a full spectrum designer that loves the intersection of art and code. Originally from Croatia, now living in Switzerland.</p> 
-    <p class="animated fadeInUp three"> When I’m not heads down at work, you’ll catch me gushing over my latest app discovery, cycling in the alps, or consuming obnoxious amounts of oranges.</p>
+    <p class="animated fadeInUp three"> When I’m not heads down at work, you’ll catch me xperimenting with code, cycling in the alps, or consuming obnoxious amounts of oranges.</p>
     <p class="animated fadeInUp four"> Keep up with me on <a href="https://twitter.com/tonilijic" target="_blank" class="underline">Twitter</a> or better yet,<br> shoot me an <a href="mailto:hello.tonilijic@gmail.com/" target="_blank" class="underline">email</a>.</p>
 
  
@@ -93,6 +94,8 @@
     </div> 
   </div>
 
+
+  
   <script>
 
   let greetEl = document.getElementById("greet");
@@ -123,13 +126,11 @@
         if (element.classList.contains("night")) {
           element.classList.add("day")
           element.classList.remove("night")
-          document.getElementById("dayimg").style.display = "block";
-          document.getElementById("nightimg").style.display = "none";
+          
         } else {
           element.classList.add("night")
           element.classList.remove("day")
-          document.getElementById("nightimg").style.display = "block";
-          document.getElementById("dayimg").style.display = "none";
+      
         }
       }
       
@@ -140,15 +141,13 @@
 
           document.documentElement.classList.add('night');
           document.documentElement.classList.remove('day');
-          document.getElementById("nightimg").style.display = "block";
-          document.getElementById("dayimg").style.display = "none";
+          
 
 
         } else {
           document.documentElement.classList.add('day');
           document.documentElement.classList.remove('night');
-          document.getElementById("dayimg").style.display = "block";
-          document.getElementById("nightimg").style.display = "none";
+          
         }
       }
 
