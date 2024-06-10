@@ -87,11 +87,18 @@ body {
 	padding-top: 2.4rem;
 	margin-bottom: 4.8rem;
 	color: var(--color-h1);
-	overflow: hidden ;
+
 	user-select: none;
 	-webkit-user-select: none; /* For Safari */
 	-moz-user-select: none; /* For Firefox */
 	-ms-user-select: none; /* For IE/Edge */
+	
+	overflow: hidden ;
+	-webkit-overflow: hidden; /* For Safari */
+	-moz-overflow: hidden; /* For Firefox */
+	-ms-overflow: hidden; /* For IE/Edge */
+	
+
 	
 }
 
