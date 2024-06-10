@@ -103,11 +103,11 @@ Licensed under the MIT license - http://opensource.org/licenses/MIT
 }
 
 @keyframes flash {
-  0%, 50%, 100% {
+  0%, 100% {
     opacity: 1;
   }
 
-  25%, 75% {
+  50% {
     opacity: 0.5;
   }
 }
