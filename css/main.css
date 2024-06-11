@@ -192,6 +192,12 @@ body a {
 	transition-duration: 0.2s;
 	transition-timing-function: ease-out;
   }
+
+  .underline-rdio:hover + #rdio-psa {
+	opacity: 1;
+}
+
+  @media (hover: hover) {
   .underline:hover:after,
   .underline:focus:after,
   .underline:active:after {
@@ -242,10 +248,10 @@ body a {
 	  opacity: 1;
   }
 
-
+  }
 
 /* mobile */
-@media (max-width: 550px) {
+/* @media (max-width: 550px) {
 
 	.underline-rdio:hover + #rdio-psa {
 		opacity: 1;
@@ -260,13 +266,7 @@ body a {
 		right:0;
 	}
 
-}
+} */
 
 /* Styles for touch devices (hover: none) */
-@media (hover: none) {
-	.underline-rdio:hover + #rdio-psa,
-	.underline-rdio:focus + #rdio-psa,
-	.underline-rdio:active + #rdio-psa {
-	  opacity: 1;
-	}
-  }
+
