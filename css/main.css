@@ -186,7 +186,7 @@ p{
 
 body a {
 	/* color: var(--color-h1); */
-	color: orange
+	color: orange;
 	font-family: NeueHaasMedium;
 	text-decoration: none;
 }
