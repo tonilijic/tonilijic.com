@@ -287,7 +287,9 @@ body a {
 }
 
 @media (hover:none ) and (pointer: coarse) {
-	.underline-rdio:hover + #rdio-psa {
+.underline-rdio:hover + #rdio-psa,
+	.underline-rdio:focus + #rdio-psa,
+	.underline-rdio:active + #rdio-psa {
 		opacity: 1;
 	}
 }
