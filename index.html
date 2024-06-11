@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-HKPQ08YLH6"></script>
 
@@ -14,7 +13,6 @@
   </script>
 
   <script>
-          
     var trackOutboundLink = function(url) {
       ga('send', 'event', 'outbound', 'click', url, {
         'transport': 'beacon',
@@ -54,119 +52,88 @@
   <meta name="twitter:title" content="Toni L. · Designer">
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:site" content="@tonilijic" />
-  <meta name="twitter:description"content="Designer working at the intersection of art, design, and code." />
+  <meta name="twitter:description" content="Designer working at the intersection of art, design, and code." />
   <meta name="twitter:image" content="https://tonilijic.com/images/previewimg.jpg">
-
-
-  
-  
-
 </head>
 
-
-<!-- Content -->
-
 <body>
-
-  <div class="container" tabindex="-1">
-   <div class="animated flash">
-  
+  <main class="container" tabindex="-1">
+    <div class="animated flash">
       <div class="toggle" onclick="toggleMode()">
-        <div class = "sun-and-moon"></div>
+        <div class="sun-and-moon"></div>
       </div> 
-
     </div>
-
 
     <h1 class="animated fadeInUp one"><div id="greet">hi,</div> i'm toni.</h1>
 
-<!-- paragraphs -->
+    <!-- paragraphs -->
     <p class="animated fadeInUp two">I'm a full spectrum designer that loves the intersection of art and code. Originally from Croatia, now living in Switzerland.</p> 
-    <p class="animated fadeInUp three"> When I’m not heads down at work, you’ll catch me xperimenting with code, cycling in the alps, or consuming obnoxious amounts of oranges.</p>
+    <p class="animated fadeInUp three"> When I’m not heads down at work, you’ll catch me experimenting with code, cycling in the alps, or consuming obnoxious amounts of oranges.</p>
     <p class="animated fadeInUp four"> Keep up with me on <a href="https://twitter.com/tonilijic" target="_blank" class="underline">Twitter</a> or better yet,<br> shoot me an <a href="mailto:hello.tonilijic@gmail.com/" target="_blank" class="underline">email</a>.</p>
 
- 
     <div class="animated fadeInUp five">
       <div class="p3">
         <h2>MORE ON</h2> 
         <p><a href="https://bento.me/tonil" target="_blank" class="underline">bento.me</a></p>
       </div>
     </div> 
-  </div>
+  </main>
 
-
-  
   <script>
+    let greetEl = document.getElementById("greet");
+    let greet = ["hi,", "bok,", "grüezi,"];
+    let i = 0;
 
-  let greetEl = document.getElementById("greet");
-  let greet = ["hi,", "bok,", "grüezi,"];
-  let i = 0;
-
-  function updateGreet() {
+    function updateGreet() {
       greetEl.classList.remove("show");
       setTimeout(() => {
-          greetEl.innerHTML = greet[i % 3];
-          greetEl.classList.add("show");
-          i++;
+        greetEl.innerHTML = greet[i % 3];
+        greetEl.classList.add("show");
+        i++;
       }, 10); // Small delay to allow the class removal to be processed
-  }
+    }
 
-  // Start the first change after 2 seconds
-  setTimeout(() => {
+    // Start the first change after 2 seconds
+    setTimeout(() => {
       updateGreet();
       // Then change text at regular intervals of 3 seconds
       setInterval(updateGreet, 3000);
-  }, -1000);
+    }, -1000);
 
-
-      const toggleMode = () => {
-
-        let element = document.documentElement;
-       
-        if (element.classList.contains("night")) {
-          element.classList.add("day")
-          element.classList.remove("night")
-          
-        } else {
-          element.classList.add("night")
-          element.classList.remove("day")
-      
-        }
-      }
-      
-
-      // Check for system preference and apply it
-      function applyTheme(theme) {
-        if (theme === 'dark') {
-
-          document.documentElement.classList.add('night');
-          document.documentElement.classList.remove('day');
-          
-
-
-        } else {
-          document.documentElement.classList.add('day');
-          document.documentElement.classList.remove('night');
-          
-        }
-      }
-
-      // Initial theme check
-      if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-        applyTheme('dark');
+    const toggleMode = () => {
+      let element = document.documentElement;
+      if (element.classList.contains("night")) {
+        element.classList.add("day");
+        element.classList.remove("night");
       } else {
-        applyTheme('light');
+        element.classList.add("night");
+        element.classList.remove("day");
       }
+    }
 
-      // Listen for changes in system preference
-      window.matchMedia('(prefers-color-scheme: dark)').addListener(e => {
-        applyTheme(e.matches ? 'dark' : 'light');
-      });
+    // Check for system preference and apply it
+    function applyTheme(theme) {
+      if (theme === 'dark') {
+        document.documentElement.classList.add('night');
+        document.documentElement.classList.remove('day');
+      } else {
+        document.documentElement.classList.add('day');
+        document.documentElement.classList.remove('night');
+      }
+    }
 
+    // Initial theme check
+    if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+      applyTheme('dark');
+    } else {
+      applyTheme('light');
+    }
+
+    // Listen for changes in system preference
+    window.matchMedia('(prefers-color-scheme: dark)').addListener(e => {
+      applyTheme(e.matches ? 'dark' : 'light');
+    });
   </script>
   <script src="js/script.js"></script>
 </body>
 </html>
-
-
-
