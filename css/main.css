@@ -250,10 +250,7 @@ body a {
 	  transition-timing-function: ease-in;
   }
   
-  .underline-rdio:hover + #rdio-psa {
-	  opacity: 1;
-  }
-
+  
 
 
   @media(hover: hover) and (pointer: fine) {
