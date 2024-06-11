@@ -75,7 +75,7 @@ body {
 
 .container{
 	grid-column: 2 / 10;
-	max-width: 355px;
+	max-width: 420px;
 	user-select: none;
 	-webkit-user-select: none; /* For Safari */
 	-moz-user-select: none; /* For Firefox */
