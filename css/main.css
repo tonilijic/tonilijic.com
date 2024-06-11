@@ -185,7 +185,8 @@ p{
 
 
 body a {
-	color: var(--color-h1);
+	/* color: var(--color-h1); */
+	color: orange
 	font-family: NeueHaasMedium;
 	text-decoration: none;
 }
@@ -285,4 +286,3 @@ body a {
 	}
 
 }
-
