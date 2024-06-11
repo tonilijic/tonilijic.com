@@ -133,6 +133,18 @@
     window.matchMedia('(prefers-color-scheme: dark)').addListener(e => {
       applyTheme(e.matches ? 'dark' : 'light');
     });
+
+
+  // Add ontouchstart event to sun-and-moon
+  const sunAndMoon = document.querySelector('.sun-and-moon');
+    if (sunAndMoon) {
+      sunAndMoon.ontouchstart = function(e) {
+        e.preventDefault();
+        toggleMode();
+      };
+    }
+
+
   </script>
   <script src="js/script.js"></script>
 </body>
