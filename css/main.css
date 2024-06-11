@@ -261,3 +261,12 @@ body a {
 	}
 
 }
+
+/* Styles for touch devices (hover: none) */
+@media (hover: none) {
+	.underline-rdio:hover + #rdio-psa,
+	.underline-rdio:focus + #rdio-psa,
+	.underline-rdio:active + #rdio-psa {
+	  opacity: 1;
+	}
+  }
