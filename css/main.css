@@ -27,7 +27,7 @@
     --color-bg: #F6F6F7;
 	--color-text:#202020;
 	--color-h1: #202020;
-    --color-h4: #9F9EA1;
+    --color-h2: #9F9EA1;
 
 	--offset-left:0.7rem;
 	--offset-bottom: 0.4rem;
@@ -38,7 +38,7 @@
     --color-bg: #0c0c0c;
 	--color-text: #C8C8C9;
     --color-h1: #fff;
-    --color-h4: #8A898C;
+    --color-h2: #8A898C;
 
 
 	--offset-left:1.6rem;
@@ -162,8 +162,8 @@ h1 {
 }
 
 
-h4 {
-	color: var(--color-h4);
+h2 {
+	color: var(--color-h2);
 	font-size: 1.4rem; line-height: 2rem;
 	margin-bottom: 1.4rem; 
 	font-weight: 300;
@@ -185,8 +185,7 @@ p{
 
 
 body a {
-	/* color: var(--color-h1); */
-	color: orange;
+	color: var(--color-h1);
 	font-family: NeueHaasMedium;
 	text-decoration: none;
 }
