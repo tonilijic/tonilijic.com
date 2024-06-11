@@ -191,7 +191,7 @@ body a {
 }
 
 
-@media(hover: hover) and (pointer: fine) {
+
 .underline {
 	display: inline;
 	position: relative;
@@ -257,7 +257,6 @@ body a {
 	  transition-duration: 0.4s;
 	  transition-timing-function: ease-in;
   }
-}
   
   .underline-rdio:hover + #rdio-psa {
 	  opacity: 1;
@@ -285,4 +284,10 @@ body a {
 		height: 72vh;
 	}
 
+}
+
+@media (pointer: coarse) {
+	.underline-rdio:hover + #rdio-psa {
+		opacity: 1;
+	}
 }
