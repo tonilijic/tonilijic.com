@@ -286,7 +286,7 @@ body a {
 
 }
 
-@media (pointer: coarse) {
+@media (hover:none ) and (pointer: coarse) {
 	.underline-rdio:hover + #rdio-psa {
 		opacity: 1;
 	}
