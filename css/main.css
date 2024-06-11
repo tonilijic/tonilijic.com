@@ -257,12 +257,13 @@ body a {
 	  transition-duration: 0.4s;
 	  transition-timing-function: ease-in;
   }
+}
   
   .underline-rdio:hover + #rdio-psa {
 	  opacity: 1;
   }
 
-}
+
 
 /* mobile */
 @media (max-width: 550px) {
