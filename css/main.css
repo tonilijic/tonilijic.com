@@ -286,6 +286,7 @@ body a {
 
 	.container{
 		grid-column: 2/12;
+		max-width: 355px;
 	}
 
 
