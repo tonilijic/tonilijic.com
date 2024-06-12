@@ -286,7 +286,8 @@ body a {
 
 	.container{
 		grid-column: 1/12;
-		
+		margin-left: auto;
+		margin-right: auto;
 	}
 
 
