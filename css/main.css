@@ -284,7 +284,10 @@ body a {
 		opacity: 1;
 	} */
 
-	
+	.container{
+		grid-column: 3/12;
+		
+	}
 
 
 	.underline:after{
