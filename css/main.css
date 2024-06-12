@@ -173,6 +173,7 @@ h2 {
 	margin-bottom: 1.4rem; 
 	font-weight: 400;
 	text-transform: uppercase;
+	margin-top: 4.8rem;
 
 }
 
@@ -186,8 +187,20 @@ p{
 
 
 .p3 {
-	padding-top: 4.8rem;
+
+	display: flex;
+	flex-direction: row; /* Default column layout */
+  	align-items: center;
+	gap: 3.2rem;
 }
+
+p3 p {
+	display: inline-block;
+	justify-content: center; /* Center the items horizontally */
+	 /* Set the spacing between items */
+}
+
+
 
 
 
