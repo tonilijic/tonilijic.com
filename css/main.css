@@ -285,7 +285,7 @@ body a {
 	} */
 
 	.container{
-		grid-column: 12/12;
+		grid-column: 1/12;
 		
 	}
 
