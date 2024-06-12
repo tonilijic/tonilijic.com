@@ -249,7 +249,7 @@ body a {
 	display: inline;
 	position: relative;
 	overflow: hidden;
-	width: 40px;
+	width: 4rem;
   }
   
   .underline-rdio:after {
@@ -299,8 +299,8 @@ body a {
 	} */
 
 	.container{
-		margin-left: 2.4rem;
-		margin-right: 2.4rem;
+		margin-left: 1.6rem;
+		margin-right: 1.6rem;
 	}
 
 
@@ -320,7 +320,7 @@ body a {
 		
 p{
 	margin-bottom: 2.4rem;
-	font-size: 2rem;
+	font-size: 1.8rem;
 	
 }
 	
