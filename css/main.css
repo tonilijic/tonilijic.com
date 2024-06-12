@@ -179,7 +179,7 @@ h2 {
 
 
 p{
-	margin-bottom: 2.4rem;
+	margin-bottom: 2rem;
 	font-size: 1.8rem;
 	font-weight: 400;
 }
@@ -286,9 +286,9 @@ body a {
 	} */
 
 	.container{
-		grid-column: 1/12;
-		margin-left: 2.4rem;
-		margin-right: auto;
+		grid-column: 2/12;
+
+		max-width: 355px;
 	}
 
 
@@ -307,7 +307,7 @@ body a {
 
 		
 p{
-	margin-bottom: 2.4rem;
+	margin-bottom: 2rem;
 	font-size: 2rem;
 	
 }
