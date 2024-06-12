@@ -287,11 +287,11 @@ body a {
 		opacity: 1;
 	} */
 
-	/* .container{
-		grid-column: 1/12;
-		margin-left: 3.2rem;
+	.container{
+		
+		margin-left: 2.4rem;
 		margin-right: auto;
-	} */
+	}
 
 
 	.underline:after{
