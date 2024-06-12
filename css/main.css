@@ -68,7 +68,7 @@ body {
 	font-size: 1.6rem;
 	line-height: 2.6rem;
 	display:grid;
-	grid-template-columns: repeat(12, minmax(0, 1fr));
+	/* grid-template-columns: repeat(12, minmax(0, 1fr)); */
 	grid-gap: 2.4rem;
 	height: 80vh;
 	place-items: center;
@@ -77,7 +77,7 @@ body {
 
 
 .container{
-	grid-column: 2 / 11;
+	/* grid-column: 2 / 11; */
 	max-width: 420px;
 	user-select: none;
 	-webkit-user-select: none; /* For Safari */
@@ -286,8 +286,7 @@ body a {
 	} */
 
 	.container{
-		grid-column: 1/12;
-		margin-left: 2.4rem;
+		margin-left: 3.2rem;
 		margin-right: auto;
 	}
 
