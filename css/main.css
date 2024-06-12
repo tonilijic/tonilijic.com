@@ -286,9 +286,9 @@ body a {
 	} */
 
 	.container{
-		grid-column: 2/12;
-
-		max-width: 355px;
+		grid-column: 1/12;
+		margin-left: 3.2rem;
+		margin-right: auto;
 	}
 
 
