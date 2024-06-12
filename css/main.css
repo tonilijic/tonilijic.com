@@ -284,10 +284,7 @@ body a {
 		opacity: 1;
 	} */
 
-	.container{
-		grid-column: 2/12;
-		max-width: 375px;
-	}
+	
 
 
 	.underline:after{
