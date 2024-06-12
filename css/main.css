@@ -298,6 +298,8 @@ body a {
 		height: 72vh;
 	}
 
-	
+	.break {
+		display: none;
+	}
 
 }
