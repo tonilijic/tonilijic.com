@@ -1,154 +1,200 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-HKPQ08YLH6"></script>
+  <head>
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-HKPQ08YLH6"
+    ></script>
 
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'G-HKPQ08YLH6');
-  </script>
-
-  <script>
-    var trackOutboundLink = function(url) {
-      ga('send', 'event', 'outbound', 'click', url, {
-        'transport': 'beacon',
-        'hitCallback': function(){document.location = url;}
-      });
-    }
-  </script>
-
-  <!-- Basic Page Needs -->
-  <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <meta name="apple-touch-fullscreen" content="yes">
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black">
-  <title>Toni L. · Designer</title>
-  <meta property="og:url" content="https://tonilijic.com">
-  <meta property="og:type" content="website"> 
-  <meta name="description" content="Designer working at the intersection of art, design, and code.">
-  <meta property="og:site_name" content="Toni Lijic,Designer">
-  <meta property="og:title" content="Toni Lijic,Designer">
-  <meta property="og:image" content="https://tonilijic.com/images/previewimg.jpg">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <!-- CSS -->
-  <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/main.css">
-  <link rel="stylesheet" href="css/animate.css">
-
-  <!--mastodon-->
-  <link rel="me" href="https://mastodon.design/@tl">
-
-  <!-- Favicon -->
-  <link rel="icon" type="images/png" href="images/favicon.png">
-  
-  
-  <!-- twitter preview -->
-  <meta name="twitter:title" content="Toni Lijic,Designer">
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:site" content="@tonilijic" />
-  <meta name="twitter:description" content="Designer working at the intersection of art, design, and code." />
-  <meta name="twitter:image" content="https://tonilijic.com/images/previewimg.jpg">
-</head>
-
-<body>
-  <main class="container" tabindex="-1">
-    <div class="animated flash">
-      <div class="toggle" onclick="toggleMode()">
-        <div class="sun-and-moon"></div>
-      </div> 
-    </div>
-
-    <h1 class="animated fadeInUp one"><div id="greet">hi,</div> i'm toni.</h1>
-
-    <!-- paragraphs -->
-    <p class="animated fadeInUp two">I’m a designer who loves crafting things that spark my curiosity and that make you feel something.</p> 
-    <p class="animated fadeInUp three"> When I’m not heads down at work, you’ll catch me gushing over my latest app discovery, cycling in the alps, or consuming obnoxious amounts of oranges.</p>
-    
-
-    <div class="animated fadeInUp four">
-     
-        <h2>CONTACTS</h2> 
-        <div class="p3">
-        <p><a href="https://twitter.com/tonilijic" target="_blank" class="underline">twitter</a></p>
-        <p><a href="mailto:hello.tonilijic@gmail.com/" target="_blank" class="underline">email</a></p>
-        <p><a href="https://www.linkedin.com/in/tonilijic" target="_blank" class="underline">linkedin</a></p>
-
-      </div>
-    </div> 
-  </main>
-
-  <script>
-    let greetEl = document.getElementById("greet");
-    let greet = ["hi,", "bok,", "grüezi,"];
-    let i = 0;
-
-    function updateGreet() {
-      greetEl.classList.remove("show");
-      setTimeout(() => {
-        greetEl.innerHTML = greet[i % 3];
-        greetEl.classList.add("show");
-        i++;
-      }, 10); // Small delay to allow the class removal to be processed
-    }
-
-    // Start the first change after 2 seconds
-    setTimeout(() => {
-      updateGreet();
-      // Then change text at regular intervals of 3 seconds
-      setInterval(updateGreet, 4000);
-    }, -2000);
-
-    const toggleMode = () => {
-      let element = document.documentElement;
-      if (element.classList.contains("night")) {
-        element.classList.add("day");
-        element.classList.remove("night");
-      } else {
-        element.classList.add("night");
-        element.classList.remove("day");
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
       }
-    }
+      gtag("js", new Date());
 
-    // Check for system preference and apply it
-    function applyTheme(theme) {
-      if (theme === 'dark') {
-        document.documentElement.classList.add('night');
-        document.documentElement.classList.remove('day');
-      } else {
-        document.documentElement.classList.add('day');
-        document.documentElement.classList.remove('night');
-      }
-    }
+      gtag("config", "G-HKPQ08YLH6");
+    </script>
 
-    // Initial theme check
-    if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-      applyTheme('dark');
-    } else {
-      applyTheme('light');
-    }
-
-    // Listen for changes in system preference
-    window.matchMedia('(prefers-color-scheme: dark)').addListener(e => {
-      applyTheme(e.matches ? 'dark' : 'light');
-    });
-
-
-  // Add ontouchstart event to sun-and-moon
-  const sunAndMoon = document.querySelector('.sun-and-moon');
-    if (sunAndMoon) {
-      sunAndMoon.ontouchstart = function(e) {
-        e.preventDefault();
-        toggleMode();
+    <script>
+      var trackOutboundLink = function (url) {
+        ga("send", "event", "outbound", "click", url, {
+          transport: "beacon",
+          hitCallback: function () {
+            document.location = url;
+          },
+        });
       };
-    }
+    </script>
 
+    <!-- Basic Page Needs -->
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="apple-touch-fullscreen" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <title>Toni L. · Designer</title>
+    <meta property="og:url" content="https://tonilijic.com" />
+    <meta property="og:type" content="website" />
+    <meta
+      name="description"
+      content="Designer working at the intersection of art, design, and code."
+    />
+    <meta property="og:site_name" content="Toni Lijic,Designer" />
+    <meta property="og:title" content="Toni Lijic,Designer" />
+    <meta
+      property="og:image"
+      content="https://tonilijic.com/images/previewimg.jpg"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  </script>
-  <script src="js/script.js"></script>
-</body>
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/animate.css" />
+
+    <!--mastodon-->
+    <link rel="me" href="https://mastodon.design/@tl" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="images/png" href="images/favicon.png" />
+
+    <!-- twitter preview -->
+    <meta name="twitter:title" content="Toni Lijic,Designer" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@tonilijic" />
+    <meta
+      name="twitter:description"
+      content="Designer working at the intersection of art, design, and code."
+    />
+    <meta
+      name="twitter:image"
+      content="https://tonilijic.com/images/previewimg.jpg"
+    />
+  </head>
+
+  <body>
+    <main class="container" tabindex="-1">
+      <div class="animated flash">
+        <div class="toggle" onclick="toggleMode()">
+          <div class="sun-and-moon"></div>
+        </div>
+      </div>
+
+      <h1 class="animated fadeInUp one">
+        <div id="greet">hi,</div>
+        i'm toni.
+      </h1>
+
+      <!-- paragraphs -->
+      <p class="animated fadeInUp two">
+        I’m a designer who loves crafting things that spark my curiosity and
+        that make you feel something.
+      </p>
+      <p class="animated fadeInUp three">
+        When I’m not heads down at work, you’ll catch me gushing over my latest
+        app discovery, cycling in the alps, or consuming obnoxious amounts of
+        oranges.
+      </p>
+
+      <div class="animated fadeInUp four">
+        <h2>CONTACTS</h2>
+        <div class="p3">
+          <p>
+            <a
+              href="https://twitter.com/tonilijic"
+              target="_blank"
+              class="underline"
+              >twitter</a
+            >
+          </p>
+          <p>
+            <a
+              href="mailto:hello.tonilijic@gmail.com/"
+              target="_blank"
+              class="underline"
+              >email</a
+            >
+          </p>
+          <p>
+            <a
+              href="https://www.linkedin.com/in/tonilijic"
+              target="_blank"
+              class="underline"
+              >linkedin</a
+            >
+          </p>
+        </div>
+      </div>
+    </main>
+
+    <script>
+      let greetEl = document.getElementById("greet");
+      let greet = ["hi,", "bok,", "grüezi,"];
+      let i = 0;
+
+      function updateGreet() {
+        greetEl.classList.remove("show");
+        setTimeout(() => {
+          greetEl.innerHTML = greet[i % 3];
+          greetEl.classList.add("show");
+          i++;
+        }, 10); // Small delay to allow the class removal to be processed
+      }
+
+      // Start the first change after 2 seconds
+      setTimeout(() => {
+        updateGreet();
+        // Then change text at regular intervals of 3 seconds
+        setInterval(updateGreet, 4000);
+      }, -2000);
+
+      const toggleMode = () => {
+        let element = document.documentElement;
+        if (element.classList.contains("night")) {
+          element.classList.add("day");
+          element.classList.remove("night");
+        } else {
+          element.classList.add("night");
+          element.classList.remove("day");
+        }
+      };
+
+      // Check for system preference and apply it
+      function applyTheme(theme) {
+        if (theme === "dark") {
+          document.documentElement.classList.add("night");
+          document.documentElement.classList.remove("day");
+        } else {
+          document.documentElement.classList.add("day");
+          document.documentElement.classList.remove("night");
+        }
+      }
+
+      // Initial theme check
+      if (
+        window.matchMedia &&
+        window.matchMedia("(prefers-color-scheme: dark)").matches
+      ) {
+        applyTheme("dark");
+      } else {
+        applyTheme("light");
+      }
+
+      // Listen for changes in system preference
+      window.matchMedia("(prefers-color-scheme: dark)").addListener((e) => {
+        applyTheme(e.matches ? "dark" : "light");
+      });
+
+      // Add ontouchstart event to sun-and-moon
+      const sunAndMoon = document.querySelector(".sun-and-moon");
+      if (sunAndMoon) {
+        sunAndMoon.ontouchstart = function (e) {
+          e.preventDefault();
+          toggleMode();
+        };
+      }
+    </script>
+    <script src="js/script.js"></script>
+  </body>
 </html>
