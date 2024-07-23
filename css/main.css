@@ -99,6 +99,10 @@ body {
   -ms-overflow: hidden; /* For IE/Edge */
 }
 
+.toggle:hover {
+  cursor: pointer;
+}
+
 .sun-and-moon {
   position: absolute;
   width: 1.6rem;
